@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <center><br>
+   <h2>Display google sheet data on webpage</h2>
+   <table border="3" style="border:2px solid black" cellpadding="5px" >
+    <?var tableData = getSheetData();?>
+    <?for(var i = 0; i < tableData.length; i++) { ?>
+      <?if(i == 0) { ?>
+        <tr>
+        <?for(var j = 0; j < tableData[i].length; j++) { ?>
+        <th><?= tableData[i][j] ?></th>
+        <? } ?>
+        </tr>
+      <? } else { ?>
+        <tr>
+        <?for(var j = 0; j < tableData[i].length; j++) { ?>
+        <td><?= tableData[i][j] ?></td>
+        <? } ?>
+        </tr>
+      <? } ?>
+    <? } ?>
+    </table></center>
+  </body>
+</html>
