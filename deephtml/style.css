@@ -13,6 +13,8 @@
   gap: 10px;
   background-color: #2196F3;
   padding: 10px;
+  
+  
 }
 
 .grid-container > div {
@@ -20,4 +22,31 @@
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  position: relative;
+    top: 20px;
+    left: 5px;
 }
+.Pending{
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    
+    
+  }
+  
+  .Pending > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+    position: relative;
+      top: 20px;
+      left: 5px;
+  }
+
